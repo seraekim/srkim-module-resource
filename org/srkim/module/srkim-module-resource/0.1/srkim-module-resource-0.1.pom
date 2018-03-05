@@ -12,10 +12,8 @@
 	<!-- =========================================================== -->
 	<!--     Module Description                                      -->
 	<!-- =========================================================== -->
-<!-- 	<groupId>org.srkim.module</groupId> -->
 	<artifactId>srkim-module-resource</artifactId>
 	<packaging>jar</packaging>
-<!-- 	<version>0.1</version> -->
 	<name>srkim-module-resource</name>
 	
 	<description>Serae Kim's remote resource module, shared through @ContextConfiguration</description>
@@ -32,8 +30,8 @@
 	</distributionManagement>
 	<repositories>
 		<repository>
-			<id>${project.name}-mvn-repo</id>
-			<url>https://raw.github.com/seraekim/${project.name}/mvn-repo/</url>
+			<id>srkim-module-mvn-repo</id>
+			<url>https://raw.github.com/seraekim/srkim-module/mvn-repo/</url>
 			<snapshots>
 				<enabled>true</enabled>
 				<updatePolicy>always</updatePolicy>
