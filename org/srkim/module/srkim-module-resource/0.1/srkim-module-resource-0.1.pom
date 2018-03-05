@@ -12,10 +12,10 @@
 	<!-- =========================================================== -->
 	<!--     Module Description                                      -->
 	<!-- =========================================================== -->
-	<groupId>org.srkim.module</groupId>
+<!-- 	<groupId>org.srkim.module</groupId> -->
 	<artifactId>srkim-module-resource</artifactId>
 	<packaging>jar</packaging>
-	<version>0.1</version>
+<!-- 	<version>0.1</version> -->
 	<name>srkim-module-resource</name>
 	
 	<description>Serae Kim's remote resource module, shared through @ContextConfiguration</description>
