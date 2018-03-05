@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<included>
+	<appender name="default" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<Pattern>
+				${CONSOLE_LOG_PATTERN}
+			</Pattern>
+		</encoder>
+	</appender>
+	<appender name="simple" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<Pattern>
+				[%-5p] %d{yyyy-MM-dd HH:mm:ss.SSS} \(%F:%L\) %m%n%xEx
+			</Pattern>
+		</encoder>
+	</appender>
+	<appender name="verbose" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<Pattern>
+				[%-5p] %d{yyyy-MM-dd HH:mm:ss.SSS} %c.%M\(%F:%L\) %m%n%xEx
+			</Pattern>
+		</encoder>
+	</appender>
+	
+	<logger name="org.srkim" level="DEBUG" additivity="false">
+		<appender-ref ref="simple" />
+	</logger>
+
+	<root level="ERROR">
+		<appender-ref ref="default" />
+	</root>
+	
+	<logger name="jdbc.sqlonly"        level="OFF"/>
+    <logger name="jdbc.sqltiming"      level="OFF"/>
+    <logger name="jdbc.audit"          level="OFF"/>
+    <logger name="jdbc.resultset"      level="OFF"/>
+    <logger name="jdbc.resultsettable" level="OFF"/>
+    <logger name="jdbc.connection"     level="OFF"/>
+    
+</included>
